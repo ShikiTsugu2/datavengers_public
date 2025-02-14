@@ -1,8 +1,9 @@
-PyMuPDF
 streamlit
-spacy
 pandas
-requests
-scikit-learn
+numpy
+PyMuPDF  # Pour 'fitz'
 nltk
-chatbot_module
+spacy
+scikit-learn
+requests
+json5  # Pour la manipulation de JSON
