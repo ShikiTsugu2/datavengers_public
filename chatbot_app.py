@@ -1,5 +1,6 @@
 import importlib
 import streamlit as st
+import chatbot_module
 importlib.reload(chatbot_module)
 from chatbot_module import respond_to_user
 

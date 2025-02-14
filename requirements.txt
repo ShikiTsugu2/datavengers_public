@@ -7,3 +7,4 @@ spacy
 scikit-learn
 requests
 json5  # Pour la manipulation de JSON
+importlib
