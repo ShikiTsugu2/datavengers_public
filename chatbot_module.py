@@ -61,6 +61,7 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.stem import PorterStemmer
 import spacy
+import subprocess
 import re
 
 # Télécharger les ressources nécessaires de nltk
@@ -72,11 +73,10 @@ nltk.download('punkt')
 
 # Charger le modèle de langue de spacy
 try:
-    nlp = spacy.load('fr_core_news_sm')
+    nlp = spacy.load("fr_core_news_sm")
 except OSError:
-    from spacy.cli import download
-    download('fr_core_news_sm')
-    nlp = spacy.load('fr_core_news_sm')
+    subprocess.run(["python", "-m", "spacy", "download", "fr_core_news_sm"])
+    nlp = spacy.load("fr_core_news_sm")
 
 # Initialiser les objets nécessaires
 stop_words = set(stopwords.words('french'))

@@ -4,12 +4,9 @@ import chatbot_module
 importlib.reload(chatbot_module)
 from chatbot_module import respond_to_user
 
-# Titre de l'application
-col1, col2, col3 = st.columns([1, 6, 1])
-with col1:
-    st.image("logo.jpeg", width=100)
-with col2:
-    st.title("Chatbot Ravenfox")
+# Titre de l'application avec logo au-dessus
+st.image("logo.jpeg", width=100)
+st.title("Chatbot Ravenfox")
 
 # Champ de saisie pour la question de l'utilisateur
 user_query = st.text_input("Posez votre question:")
