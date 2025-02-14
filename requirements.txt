@@ -5,3 +5,4 @@ pandas
 requests
 scikit-learn
 nltk
+chatbot_module
