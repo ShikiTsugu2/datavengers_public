@@ -1,4 +1,6 @@
+import importlib
 import streamlit as st
+importlib.reload(chatbot_module)
 from chatbot_module import respond_to_user
 
 # Titre de l'application
